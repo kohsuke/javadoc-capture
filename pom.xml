@@ -7,7 +7,7 @@
   </parent>
 
   <artifactId>javadoc-capture</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <name>Annotation to cappture javadoc</name>
   <url>http://javadoc-capture.kohsuke.org/</url>
   <description>Javadoc Capture Annotation</description>
