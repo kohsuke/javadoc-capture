@@ -1,0 +1,26 @@
+ ----
+ Javadoc Capture Tool
+ ----
+ ----
+
+  This little library defines <<<CaptureJavadoc>>> annotation that causes Java compiler to record Javadoc in resoures files
+  (if your class is <<<org.acme.Foo>>> the javadoc will be in <<<org/acme/Foo.javadoc>>>. These files can be then
+  read at runtime.
+
+
+-----
+package org.acme;
+
+import org.kohsuke.CaptureJavadoc;
+
+@CaptureJavadoc
+class Foo {
+  ...
+
+  public URL getMyJavadoc() {
+    return getClass().getResource("Foo.javadoc");
+  }
+}
+-----
+
+  The annotation processing depends on JSR-269, so it requires Java6 or later.
