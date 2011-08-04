@@ -11,7 +11,7 @@
 
 <html>
   <head>
-    <title>Annotation to cappture javadoc - Javadoc Capture Tool</title>
+    <title>Annotation to cappture javadoc - Source Repository</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
@@ -49,7 +49,7 @@
         </h2><ul>
               
     <li class="none">
-              <strong>Introduction</strong>
+              <a href="index.html">Introduction</a>
         </li>
               
     <li class="none">
@@ -74,8 +74,6 @@
               
                 
               
-            
-            
       
             
       
@@ -97,13 +95,15 @@
       
             
       
+            
+            
               
             <li class="expanded">
               <a href="project-info.html">Project Information</a>
                 <ul>
                   
     <li class="none">
-              <strong>About</strong>
+              <a href="index.html">About</a>
         </li>
                   
     <li class="none">
@@ -147,7 +147,7 @@
         </li>
                   
     <li class="none">
-              <a href="source-repository.html">Source Repository</a>
+              <strong>Source Repository</strong>
         </li>
               </ul>
         </li>
@@ -164,18 +164,7 @@
     </div>
     <div id="content">
       <div id="contentBox">
-        <p>This little library defines <tt>CaptureJavadoc</tt> annotation that causes Java compiler to record Javadoc in resoures files (if your class is <tt>org.acme.Foo</tt> the javadoc will be in <tt>org/acme/Foo.javadoc</tt>. These files can be then read at runtime.</p><div><pre>package org.acme;
-
-import org.kohsuke.CaptureJavadoc;
-
-@CaptureJavadoc
-class Foo {
-  ...
-
-  public URL getMyJavadoc() {
-    return getClass().getResource(&quot;Foo.javadoc&quot;);
-  }
-}</pre></div><p>The annotation processing depends on JSR-269, so it requires Java6 or later.</p>
+        <div class="section"><h2>Overview<a name="Overview"></a></h2><a name="Overview"></a><p>This project uses a Source Content Management System to manage its source code.</p></div><div class="section"><h2>Web Access<a name="Web_Access"></a></h2><a name="Web_Access"></a><p>The following is a link to the online source repository.</p><div class="source"><pre><a class="externalLink" href="http://javadoc-capture.kohsuke.org/">http://javadoc-capture.kohsuke.org/</a></pre></div></div><div class="section"><h2>Anonymous access<a name="Anonymous_access"></a></h2><a name="Anonymous_access"></a><p>Refer to the documentation of the SCM used for more information about anonymously check out. The connection url is:</p><div class="source"><pre>git:git@github.com/kohsuke/javadoc-capture.git</pre></div></div><div class="section"><h2>Developer access<a name="Developer_access"></a></h2><a name="Developer_access"></a><p>Refer to the documentation of the SCM used for more information about developer check out. The connection url is:</p><div class="source"><pre>git:ssh://git@github.com/kohsuke/javadoc-capture.git</pre></div></div><div class="section"><h2>Access from behind a firewall<a name="Access_from_behind_a_firewall"></a></h2><a name="Access_from_behind_a_firewall"></a><p>Refer to the documentation of the SCM used for more information about access behind a firewall.</p></div>
       </div>
     </div>
     <div id="footer">
